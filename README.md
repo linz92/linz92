@@ -1,16 +1,71 @@
-## Hi there 👋
+<h1 align="center">你好，我是 林知夏</h1>
 
-<!--
-**linz92/linz92** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```
+$ echo "hello from shanghai"
+> 你好，我是 林知夏
+```
 
-Here are some ideas to get you started:
+## `$ whoami`
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+我是 林知夏，上海交通大学的硕士研究生。主要折腾音频大模型，最近大部分时间都泡在语音识别相关的事情上。比起追新榜单，我更关心模型在嘈杂环境、口音变化和小样本场景里是不是真的可用。
+
+```yaml
+profile:
+  name: 林知夏
+  role: 硕士研究生
+  affiliation: 上海交通大学
+  city: 上海
+  timezone: Asia/Shanghai
+  interests:
+    - 音频大模型
+    - 语音识别
+    - 自监督学习
+    - 开源工具链
+  tools:
+    - PyTorch
+    - Whisper
+    - Kaldi
+    - Hugging Face
+```
+
+## `$ cat experiments.md`
+
+### 当前实验
+
+- **低资源方言场景下的语音识别适配**  
+  用预训练音频模型做轻量级微调，对比不同数据增强和适配策略的差异。
+
+- **长音频理解的上下文建模**  
+  探索把语音段落切分重排，让模型在长会议场景里更少丢关键内容。
+
+- **ASR 置信度校准**  
+  给语音识别结果更可靠的置信度，方便下游任务做取舍。
+
+## `$ schedule.py --today`
+
+| 时段 | 在做的事 |
+| --- | --- |
+| 早上 | 读论文、跑实验，记录失败的假设 |
+| 下午 | 写数据处理脚本，调整模型参数 |
+| 晚上 | 整理实验笔记，写周报 |
+
+## 任务看板
+
+| 任务 | 为什么做 | 下一步 |
+| --- | --- | --- |
+| 给训练集做口音筛选 | 让测试更贴近真实用户 | 统计音素错误分布 |
+| 复现 baseline | 确认对比起点公平 | 跑完 3 个随机种子 |
+| 整理 bad case 样例 | 定位模型失效模式 | 做一次人工听感标注 |
+
+<details>
+<summary>最近的笔记</summary>
+
+- 发现用 8k 采样率数据做增强后，模型对电话语音的稳定性比想象中好。
+- 读了一篇关于语音表征解耦的论文，打算在下个实验里试试中间层特征。
+- 把训练脚本里的数据加载瓶颈修掉了，速度提升不少，但还需要更多验证。
+
+</details>
+
+## 写在最后
+
+如果你也在折腾语音或者音频模型，欢迎来聊聊。希望有一天，我们做的东西不只是跑通 demo，而是能顺手解决一些真实问题。
